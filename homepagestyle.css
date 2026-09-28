@@ -1,2 +1,78 @@
-.heading {
+body {
+  background-color: #e6f2ff; /* Light blue background */
+  color: #2c3e50;            /* Dark navy text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.site-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff; /* White card inside light blue page */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+h1 {
+  color: #1a5276;
+  margin-bottom: 5px;
+}
+h2 {
+  color: #2980b9;
+  margin-top: 30px;
+}
+.subtitle {
+  font-size: 1.1rem;
+  color: #5d6d7e;
+  margin-bottom: 25px;
+}
+
+.iteming {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 8px;
+  margin: 15px 0;
+  border: 3px solid #d4e6f1; /* Light blue border */
+}
+
+/* CUTENESS RATER SECTION */
+.rater-box {
+  margin: 25px 0;
+}
+
+button {
+  background-color: #5dade2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+#rating-text {
+  font-weight: bold;
+  color: #27ae60;
+  margin-top: 10px;
+}
+
+.name {
+  background-color: #d4e6f1;
+  color: #1b4f72;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.name:hover {
+  background-color: #a9cce3;
 }
