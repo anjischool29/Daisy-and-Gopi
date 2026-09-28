@@ -7,16 +7,12 @@
   <link rel="stylesheet" href="homepagestyle.css">
 </head>
 <body>
-
   <div class="site-container">
-
     <h1>Welcome to Daisy's Website!</h1>
     <p class="subtitle">A cute photo gallery and story about the best dog, Daisy.</p>
-
     <h2>Daisy's Photo Gallery</h2>
     <img class="iteming" src="IMG_5396.jpeg" alt="Daisy playing in the park">
     <img class="iteming" src="IMG_9926.jpeg" alt="Daisy laying down">
-
     <div class="rater-box">
       <h3>Rate Daisy (1 to 10):</h3>
       <input type="number" id="ratingInput" min="1" max="10" placeholder="Enter a number">
@@ -26,21 +22,16 @@
     <div class="name" onclick="location.href='webpage.html'">
       Click here to read Daisy's full story & favorite treats! ➔
     </div>
-
   </div>
-
   <script>
     function checkRating() {
       var rating = document.getElementById("ratingInput").value;
       var messageElement = document.getElementById("rating-text");
-
       if (rating === "") {
         messageElement.innerText = "Please enter a number first!";
         messageElement.style.color = "orange";
         return; }
-
       rating = Number(rating);
-
       if (rating < 5) {
         messageElement.innerText = "Daisy didn't like that...";
         messageElement.style.color = "red";
@@ -49,6 +40,5 @@
         messageElement.style.color = "green"; }
     }
   </script>
-
 </body>
 </html>
