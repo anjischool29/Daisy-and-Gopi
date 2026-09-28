@@ -29,11 +29,33 @@
 
   </div>
 
-  <script>
-    function rateDaisy() {
-      document.getElementById("rating-text").innerText = "Rating: 1000/10! Absolute perfection!";
-    }
-  </script>
+<div class="rater-box">
+  <h3>Rate Daisy (1 to 10):</h3>
+  
+  <input type="number" id="ratingInput" min="1" max="10" placeholder="Enter a number">
+  
+  <button onclick="checkRating()">Submit Rating</button>
+
+  <p id="rating-text"></p>
+</div>
+
+<script>
+  function checkRating() {
+    var rating = document.getElementById("ratingInput").value;
+    var messageElement = document.getElementById("rating-text");
+    if (rating === "") {
+      messageElement.innerText = "Please enter a number first!";
+      messageElement.style.color = "orange";
+      return;}
+    
+    rating = Number(rating);
+    if (rating < 5) {
+      messageElement.innerText = "Daisy didn't like that...";
+      messageElement.style.color = "red"
+    else {
+      messageElement.innerText = "Awesome choice! Daisy is happy!";
+      messageElement.style.color = "green";}
+     }
 
 </body>
 </html>
