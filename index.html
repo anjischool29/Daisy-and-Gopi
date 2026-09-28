@@ -15,30 +15,20 @@
     <p class="subtitle">A cute photo gallery and story about the best dog, Daisy.</p>
 
     <h2>Daisy's Photo Gallery</h2>
-
-    <!-- REQUIRED IMAGE 1 (Using your requested image command structure) -->
-    <!-- CHANGE "daisy-playing.jpg" TO YOUR ACTUAL IMAGE FILENAME -->
-    <img class="iteming" src="daisy-playing.jpg" alt="Daisy playing in the yard">
-
-    <!-- REQUIRED IMAGE 2 -->
-    <!-- CHANGE "daisy-sleeping.jpg" TO YOUR ACTUAL IMAGE FILENAME -->
-    <img class="iteming" src="daisy-sleeping.jpg" alt="Daisy sleeping peacefully">
+    <img class="iteming" src="IMG_9969.jpeg" alt="Daisy playing in the yard">
+    <img class="iteming" src="IMG_9926.jpeg" alt="Daisy sleeping peacefully">
 
     <!-- SIMPLE CUTENESS RATER BUTTON -->
     <div class="rater-box">
       <button onclick="rateDaisy()">Rate Daisy's Cuteness!</button>
       <p id="rating-text"></p>
     </div>
-
-    <!-- REQUIRED LINK TO ANOTHER WEBPAGE (Using your requested clickable div command) -->
-    <!-- CHANGE 'about.html' TO THE WEBPAGE FILE OR URL YOU WANT TO OPEN -->
     <div class="name" onclick="location.href='webpage.html'">
       Click here to read Daisy's full story & favorite treats! ➔
     </div>
 
   </div>
 
-  <!-- SIMPLE JAVASCRIPT FOR THE CUTENESS RATER BUTTON -->
   <script>
     function rateDaisy() {
       document.getElementById("rating-text").innerText = "Rating: 1000/10! Absolute perfection!";
