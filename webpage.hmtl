@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Daisy - Her Story & Favorites</title>
+  
+  <link rel="stylesheet" href="homepagestyle.css">
+</head>
+<body>
+
+
+  <div class="site-container">
+
+    <h1>All About Daisy!</h1>
+    <p class="subtitle">Get to know the sweetest dog in the world.</p>
+<h2>Daisy's Favorite Things</h2>
+    <!-- CHANGE "daisy-treat.jpg" TO YOUR ACTUAL IMAGE FILENAME -->
+    <img class="iteming" src="daisy-treat.jpg" alt="Daisy enjoying a yummy treat">
+
+    <!-- CHANGE "daisy-park.jpg" TO YOUR ACTUAL IMAGE FILENAME -->
+    <img class="iteming" src="daisy-park.jpg" alt="Daisy running at the dog park">
+
+    <div style="text-align: left; margin: 20px 0;">
+      <p><strong>Breed:</strong> Border Collie Mix</p>
+      <p><strong>Age:</strong> 5 years old</p>
+      <p><strong>Favorite Treats:</strong> Peanut butter, boiled eggs, and crunchy apples.</p>
+      <p><strong>Favorite Activities:</strong> Chasing tennis balls, belly rubs, and taking long naps in the grass.</p>
+      <p><strong>Fun Fact:</strong> Daisy always tilts her head whenever you say the word "walk" or "treat"!</p>
+    </div>
+
+    <!-- SIMPLE CUTENESS RATER BUTTON FOR THIS PAGE -->
+    <div class="rater-box">
+      <button onclick="ratePersonality()">Rate Daisy's Personality!</button>
+      <p id="rating-text"></p>
+    </div>
+
+    <!-- LINK TO GO BACK TO THE HOMEPAGE -->
+    <div class="name" onclick="location.href='index.html'">
+      ⬅ Back to Daisy's Homepage
+    </div>
+
+  </div>
+
+  <!-- SIMPLE JAVASCRIPT FOR THE CUTENESS RATER BUTTON -->
+  <script>
+    function ratePersonality() {
+      document.getElementById("rating-text").innerText = "Personality Rating: 10/10 Good Girl!";
+    }
+  </script>
+
+</body>
+</html>
